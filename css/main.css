@@ -7,11 +7,12 @@
     list-style: none;
   }
 
-    .grey {
+.grey {
         color: #66757f ;
 
     }
-    header {
+
+header {
      position: fixed;
      width: 100%;
      height: 60px;
@@ -19,35 +20,56 @@
      background-color: yellow;
     }
 
-    header div {
+header div {
         display: inline;
     } 
 
-    ul {
+ul {
      display: inline;
  }
   
-    li  {
+li  {
       font-size: 18px;
       display: inline-block;
       margin: 5px;
   }
 
-    .twitter {
-      display: inline-block;
-      margin-left: 20%;      
+.twitter {
+    display: inline-block;
+    margin-left: 20%;   
+      margin-top: 10px; 
   }
 
-    .twitter a {
-        color : #1da1f2;
+.twitter a {
+    color : #1da1f2;
     }
 
-    .botones {
-      display: inline-block;
-      float: right;
+.botones {
+      /*display: inline-block;*/
+    float: right;
+     width: 300px;
+    
   }
 
-  section {
-      padding-top: 100px;
+section {
+    padding-top: 100px;
   }
 
+.submit-boton {
+    width: 90px;
+    height: 30px;
+    background-color: #4ab3f4;  
+
+
+  }
+
+.input-search {
+    margin-top: 10px;
+    width: 200px;
+    height: 35px;
+    background-color:  #f5f8fa;
+    border-radius: 15px;
+    border-style: none;
+    border: 2px solid #e7edf1;
+    padding: 2px;
+}
