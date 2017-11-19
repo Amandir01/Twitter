@@ -28,7 +28,7 @@ window.addEventListener('load', function(event) {
   }
   function enter() {
     var myComment = area.value ;
-    text.value = '' ;
+    area.value = '' ;
     if (myComment === 0 || myComment === null) {
       boton.disabled = true;
     } else {

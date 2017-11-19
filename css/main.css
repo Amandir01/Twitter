@@ -185,3 +185,11 @@ body {
     color:#2B00FF;
   }
   
+  #new-messages div{
+    word-break: break-all; /*el texto se adecua a su contenedor*/
+    background-color:white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 8px double #7a5937;
+    
+  }
