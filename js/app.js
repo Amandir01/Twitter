@@ -6,6 +6,7 @@ window.addEventListener('load', function(event) {
   var showMessage = document.getElementById('new-messages');
 
   boton.addEventListener('click', enter);
+  boton.addEventListener('click', hour);
 
   area.addEventListener('keydown', counting);
   function counting() {
@@ -25,7 +26,8 @@ window.addEventListener('load', function(event) {
     } else {
       count.setAttribute('id', 'count');
     }
-  }
+  };
+ 
   function enter() {
     var myComment = area.value ;
     area.value = '' ;
@@ -36,17 +38,20 @@ window.addEventListener('load', function(event) {
       newComment.innerHTML = myComment;
       showMessage.appendChild(newComment);
     }
-  };
+  }
+  function addZero(i) { /* esto es para agregar cero a las horas que son menor de 10*/
+    if (i < 10) {
+      i = '0' + i;
+    }
+    return i;
+  }
+  function hour() { /* crear las horas ,minutos y segundos*/
+    var day = new Date();
+    var x = document.getElementById('tweetHour');
+    var hours = addZero(day.getHours());
+    var minutes = addZero(day.getMinutes());
+    var seconds = addZero(day.getSeconds());
+    x.innerHTML = hours + ':' + minutes + ':' + seconds;
+  }
 });
 
-
-/* boton.addEventListener('click', function(event) {
-    if (area.value) {
-      var li = document.createElement('li');
-      var link = document.createElement('a');
-      link.textContent = area.value;
-      link.setAttribute('href', '#');
-      li.appendChild(link),
-      lista.appendChild(li);
-      area.value = '';
-    }) */

@@ -111,11 +111,12 @@ body {
 .search {
     background-color: transparent;
     border: 0;
+    outline: none;
 }
 .submit-boton {
     border: 0;
     border-radius: 9px;
-
+    outline: none;
 }
 
 .box-comment {
@@ -127,11 +128,13 @@ body {
 }
 
 #insert-text {
-    height: 100px;
+    /*height: 100px;*/
     width: 300px;
     border-radius: 15px;
     border: 3px solid #4d3930;
     font-size: 25px;
+    outline: none;
+    overflow: hidden;
 }
 #button {
     float: left;
@@ -190,6 +193,11 @@ body {
     background-color:white;
     margin-top: 10px;
     border-radius: 5px;
-    border: 8px double #7a5937;
-    
+    border: 8px double #7a5937;   
+  }
+
+  #tweetHour{
+      height: 40px;
+      width: 40px;
+
   }
